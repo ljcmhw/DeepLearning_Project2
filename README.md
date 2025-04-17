@@ -7,7 +7,7 @@ This project implements knowledge‐distillation fine‑tuning of `roberta-base`
 - **Student**: `roberta-base` wrapped with LoRA (rank=8, α=16, dropout=0.1)
 - **Parameters**: Trainable params=925,444 and all params=125,574,152.
 - **Distillation**: Temperature=2.0, α=0.7  
-- **Training**: 5 epochs, train‐batch=16, eval‐batch=64, cosine LR scheduler  
+- **Training**: 5 epochs, train‐batch=16, eval‐batch=64, cosine LR scheduler, AdamW optimizer.
 - **Results**: ≥ 90% accuracy in validation set, ≥ 84% accuracy in test set.
 
 ## 🚀 Quick Start
