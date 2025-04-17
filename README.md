@@ -6,8 +6,8 @@ This project implements knowledge‐distillation fine‑tuning of `roberta-base`
 - **Teacher**: Full `roberta-base` for logit generation
 - **Student**: `roberta-base` wrapped with LoRA (rank=8, α=16, dropout=0.1)  
 - **Distillation**: Temperature=2.0, α=0.7  
-- **Training**: 3 epochs, train‐batch=16, eval‐batch=64, cosine LR scheduler  
-- **Results**: ≥ 80% accuracy baseline, target ≥ 90%  
+- **Training**: 5 epochs, train‐batch=16, eval‐batch=64, cosine LR scheduler  
+- **Results**: ≥ 90% accuracy in validation set, ≥ 84% accuracy in test set.
 
 ## 🚀 Quick Start
 
